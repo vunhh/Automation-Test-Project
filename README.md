@@ -1,6 +1,13 @@
-# Automated Tests Project
+#### For Assignment Submission – Automation Test Project ####
 
-This project contains Playwright automated tests for the **Testing** feature.
+- This project contains Playwright automated tests for the **Automated Tests Project** asignment.
+- Repository: https://github.com/your-username/Automation-Test-Project <br>
+- Name: Automated Tests Project
+- Technologies: Playwright, Node.js
+- Tests (javascipt/Typescript): Positive and Negative Login tests
+- CI/CD: Configured using GitHub Actions
+- Report: HTML test report is generated and available in workflow artifacts
+
 
 ## 1. Prerequisites
 - Node.js (v16 or later recommended)
@@ -8,17 +15,19 @@ This project contains Playwright automated tests for the **Testing** feature.
 - Chrome/Chromium browser installed (Playwright will handle this automatically on first run)
 
 ## 2. Setup
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/vunhh/Automation-Test-Project.git
-   cd Automation-Test-Project
-   ```
-2. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-3. **Test Data:**
-   - Place all required test data files
+
+  2.1. **Clone the repository:**
+    
+    git clone https://github.com/vunhh/Automation-Test-Project.git
+
+    cd Automation-Test-Project
+
+  2.2. **Install dependencies:**
+    
+    npm install
+
+    npx playwright install
+   
 
 ## 3. Running the Tests
 
@@ -32,16 +41,47 @@ After running tests, view the detailed report:
 npx playwright show-report
 ```
 
-## 5. For Assignment Submission – Automation Test Project
+## 5. CI/CD: Configured using GitHub Actions
+    1. Create github CI file: Automation-Test-Project\.github\workflows\.ci.yml
+    
+      name: Playwright Tests
 
-    Repository: https://github.com/your-username/Automation-Test-Project
+      on:
+        push:
+          branches: [main]
+        pull_request:
+          branches: [main]
 
-    CI/CD: Configured using GitHub Actions
+      jobs:
+        test:
+          runs-on: ubuntu-latest
 
-    Technologies: Playwright, Node.js
+          steps:
+          - name: Checkout repository
+            uses: actions/checkout@v3
 
-    Tests: Positive and Negative tests
+          - name: Setup Node.js
+            uses: actions/setup-node@v3
+            with:
+              node-version: '18'
 
-    Report: HTML test report is generated and available in workflow artifacts
+          - name: Install dependencies
+            run: npm ci
 
-Please let me know if you would like me to demo or walk through the code, please contact me via: vu.nguyen.hh@gmail.com
+          - name: Install Playwright Browsers
+            run: npx playwright install --with-deps
+
+          - name: Run Playwright Tests
+            run: npm run test
+
+          - name: Upload test report
+            uses: actions/upload-artifact@v2.3.1
+            with:
+              name: playwright-report
+              path: playwright-report
+    
+  2. CI/CD pipeline: check the GitHub Actions
+
+    2.1 Go to: https://github.com/vunhh/Automation-Test-Project/actions
+
+    2.2 Check if the Playwright Tests workflow runs immediately after you push
