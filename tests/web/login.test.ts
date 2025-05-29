@@ -14,7 +14,7 @@ test.describe('Login Tests', () => {
 		const loginPage = new LoginPage(page, baseURL || '');
 		await loginPage.goto('/practice-test-login')
 		await loginPage.login('student', 'WrongPassword');
-		//verify login failed
+		//verify login failed test
 		await loginPage.checkLoginFailed('Your password is invalid!')
 	});
 });
