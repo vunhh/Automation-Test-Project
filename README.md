@@ -2,12 +2,12 @@
 
 This project contains Playwright automated tests for the **Testing** feature.
 
-## Prerequisites
+## 1. Prerequisites
 - Node.js (v16 or later recommended)
 - npm (comes with Node.js)
 - Chrome/Chromium browser installed (Playwright will handle this automatically on first run)
 
-## Setup
+## 2. Setup
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/vunhh/Automation-Test-Project.git
@@ -20,38 +20,28 @@ This project contains Playwright automated tests for the **Testing** feature.
 3. **Test Data:**
    - Place all required test data files
 
-## Running the Tests
+## 3. Running the Tests
 
-### Run a Specific Test Case
 ```sh
 npm run test
 ```
 
-### View the Playwright HTML Report
+## 4. View the Playwright HTML Report
 After running tests, view the detailed report:
 ```sh
 npx playwright show-report
 ```
 
-## Troubleshooting
-- **Test Fails:**
-  - Check the Playwright HTML report for error details and screenshots.
-  - Ensure all test data files are present in the `test-data` directory.
-  - Make sure your environment (URLs, credentials) matches the test setup.
-- **Dependencies Issues:**
-  - Run `npm install` again to ensure all packages are installed.
+## 5. For Assignment Submission – Automation Test Project
 
-## Custom Scripts
-You can add a shortcut in `package.json` for easier test runs:
-```json
-"scripts": {
-  "test:testrun": "playwright test"
-}
-```
-Then run:
-```sh
-npm run test:testrun
-```
+    Repository: https://github.com/your-username/Automation-Test-Project
 
-## Contact
-If you have questions or issues, please contact the automation maintainer or your development team. 
+    CI/CD: Configured using GitHub Actions
+
+    Technologies: Playwright, Node.js
+
+    Tests: Positive and Negative tests
+
+    Report: HTML test report is generated and available in workflow artifacts
+
+Please let me know if you would like me to demo or walk through the code, please contact me via: vu.nguyen.hh@gmail.com
