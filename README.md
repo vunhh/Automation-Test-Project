@@ -10,8 +10,8 @@ This project contains Playwright automated tests for the **Testing** feature.
 ## Setup
 1. **Clone the repository:**
    ```sh
-   git clone <your-repo-url>
-   cd auto_webmobile
+   git clone https://github.com/vunhh/Automation-Test-Project.git
+   cd Automation-Test-Project
    ```
 2. **Install dependencies:**
    ```sh
@@ -24,7 +24,7 @@ This project contains Playwright automated tests for the **Testing** feature.
 
 ### Run a Specific Test Case
 ```sh
-npm run test:web
+npm run test
 ```
 
 ### View the Playwright HTML Report

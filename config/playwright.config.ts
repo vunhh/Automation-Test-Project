@@ -17,7 +17,7 @@ export default defineConfig({
 		['html', { outputFile: 'test-results/report.json' }]
 	],
 	use: {
-		baseURL: 'https://www.google.com',
+		baseURL: 'https://practicetestautomation.com/',
 		browserName: (process.env.BROWSER as 'chromium' | 'firefox' | 'webkit') || 'chromium',
 		headless: process.env.HEADLESS === 'true',
 		screenshot: 'only-on-failure',

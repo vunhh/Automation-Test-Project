@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test:web": "playwright test --config=config/playwright.config.ts",
-    "test:mobile": "npx playwright test --config=config/appium.config.ts"
+    "test": "playwright test --config=config/playwright.config.ts"
    
   },
   "keywords": [],
