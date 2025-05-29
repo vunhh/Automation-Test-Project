@@ -7,7 +7,7 @@
 - Tests (javascipt/Typescript): Positive and Negative Login tests
 - CI/CD: Configured using GitHub Actions
 - Report: HTML test report is generated and available in workflow artifacts
-
+- Contac me via: vu.nguyen.hh@gmail.com
 
 ## 1. Prerequisites
 - Node.js (v16 or later recommended)
