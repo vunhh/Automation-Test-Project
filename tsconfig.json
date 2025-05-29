@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "types": ["jest"]
+  },
+  "include": ["**/*.ts", "tests/perf/iems.spec.js"],
+  "exclude": ["node_modules", "dist"]
+}
