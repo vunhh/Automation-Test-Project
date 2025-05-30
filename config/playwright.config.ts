@@ -18,8 +18,8 @@ export default defineConfig({
 	],
 	use: {
 		baseURL: 'https://practicetestautomation.com/',
-		browserName: (process.env.BROWSER as 'chromium' | 'firefox' | 'webkit') || 'chromium',
-		headless: process.env.HEADLESS === 'true',
+		// browserName: (process.env.BROWSER as 'chromium' | 'firefox' | 'webkit') || 'chromium',
+		headless: true,
 		screenshot: 'only-on-failure',
 		video: 'retain-on-failure',
 		trace: 'on-first-retry',
