@@ -1,13 +1,13 @@
 #### For Assignment Submission – Automation Test Project ####
 
 - This project contains Playwright automated tests for the **Automated Tests Project** assignment.
-- Repository: https://github.com/your-username/Automation-Test-Project <br>
+- Repository: https://github.com/vunhh/Automation-Test-Project
 - Name: Automated Tests Project
 - Technologies: Playwright, Node.js
-- Tests (javascipt/Typescript): Positive and Negative Login tests
+- Tests (javascript/Typescript): Positive and Negative Login tests
 - CI/CD: Configured using GitHub Actions
 - Report: HTML test report is generated and available in workflow artifacts
-- Contac me: vu.nguyen.hh@gmail.com
+- Contact me: vu.nguyen.hh@gmail.com
 
 ## 1. Prerequisites
 - Node.js (v16 or later recommended)
